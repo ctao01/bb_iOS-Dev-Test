@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DF40ADB16A08BE200C05F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADA16A08BE200C05F6D /* UIKit.framework */; };
+		3DF40ADD16A08BE200C05F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADC16A08BE200C05F6D /* Foundation.framework */; };
+		3DF40ADF16A08BE200C05F6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADE16A08BE200C05F6D /* CoreGraphics.framework */; };
+		3DF40AE516A08BE200C05F6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AE316A08BE200C05F6D /* InfoPlist.strings */; };
+		3DF40AE716A08BE200C05F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40AE616A08BE200C05F6D /* main.m */; };
+		3DF40AEB16A08BE200C05F6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40AEA16A08BE200C05F6D /* AppDelegate.m */; };
+		3DF40AED16A08BE200C05F6D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AEC16A08BE200C05F6D /* Default.png */; };
+		3DF40AEF16A08BE200C05F6D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AEE16A08BE200C05F6D /* Default@2x.png */; };
+		3DF40AF116A08BE200C05F6D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AF016A08BE200C05F6D /* Default-568h@2x.png */; };
+		3DF40AF916A08BE200C05F6D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40AF816A08BE200C05F6D /* SenTestingKit.framework */; };
+		3DF40AFA16A08BE200C05F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADA16A08BE200C05F6D /* UIKit.framework */; };
+		3DF40AFB16A08BE200C05F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADC16A08BE200C05F6D /* Foundation.framework */; };
+		3DF40B0316A08BE200C05F6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40B0116A08BE200C05F6D /* InfoPlist.strings */; };
+		3DF40B0616A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF40AFC16A08BE200C05F6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF40ACD16A08BE200C05F6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF40AD516A08BE200C05F6D;
+			remoteInfo = "Bottle Rocket iOS Developer Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bottle Rocket iOS Developer Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF40ADA16A08BE200C05F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DF40ADC16A08BE200C05F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DF40ADE16A08BE200C05F6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DF40AE216A08BE200C05F6D /* Bottle Rocket iOS Developer Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bottle Rocket iOS Developer Test-Info.plist"; sourceTree = "<group>"; };
+		3DF40AE416A08BE200C05F6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DF40AE616A08BE200C05F6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DF40AE816A08BE200C05F6D /* Bottle Rocket iOS Developer Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bottle Rocket iOS Developer Test-Prefix.pch"; sourceTree = "<group>"; };
+		3DF40AE916A08BE200C05F6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DF40AEA16A08BE200C05F6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DF40AEC16A08BE200C05F6D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3DF40AEE16A08BE200C05F6D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3DF40AF016A08BE200C05F6D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bottle Rocket iOS Developer TestTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF40AF816A08BE200C05F6D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3DF40B0016A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bottle Rocket iOS Developer TestTests-Info.plist"; sourceTree = "<group>"; };
+		3DF40B0216A08BE200C05F6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DF40B0416A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle_Rocket_iOS_Developer_TestTests.h; sourceTree = "<group>"; };
+		3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle_Rocket_iOS_Developer_TestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF40AD316A08BE200C05F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40ADB16A08BE200C05F6D /* UIKit.framework in Frameworks */,
+				3DF40ADD16A08BE200C05F6D /* Foundation.framework in Frameworks */,
+				3DF40ADF16A08BE200C05F6D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF40AF316A08BE200C05F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40AF916A08BE200C05F6D /* SenTestingKit.framework in Frameworks */,
+				3DF40AFA16A08BE200C05F6D /* UIKit.framework in Frameworks */,
+				3DF40AFB16A08BE200C05F6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF40ACB16A08BE200C05F6D = {
+			isa = PBXGroup;
+			children = (
+				3DF40AE016A08BE200C05F6D /* Bottle Rocket iOS Developer Test */,
+				3DF40AFE16A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */,
+				3DF40AD916A08BE200C05F6D /* Frameworks */,
+				3DF40AD716A08BE200C05F6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF40AD716A08BE200C05F6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */,
+				3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF40AD916A08BE200C05F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40ADA16A08BE200C05F6D /* UIKit.framework */,
+				3DF40ADC16A08BE200C05F6D /* Foundation.framework */,
+				3DF40ADE16A08BE200C05F6D /* CoreGraphics.framework */,
+				3DF40AF816A08BE200C05F6D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DF40AE016A08BE200C05F6D /* Bottle Rocket iOS Developer Test */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40AE916A08BE200C05F6D /* AppDelegate.h */,
+				3DF40AEA16A08BE200C05F6D /* AppDelegate.m */,
+				3DF40AE116A08BE200C05F6D /* Supporting Files */,
+			);
+			path = "Bottle Rocket iOS Developer Test";
+			sourceTree = "<group>";
+		};
+		3DF40AE116A08BE200C05F6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40AE216A08BE200C05F6D /* Bottle Rocket iOS Developer Test-Info.plist */,
+				3DF40AE316A08BE200C05F6D /* InfoPlist.strings */,
+				3DF40AE616A08BE200C05F6D /* main.m */,
+				3DF40AE816A08BE200C05F6D /* Bottle Rocket iOS Developer Test-Prefix.pch */,
+				3DF40AEC16A08BE200C05F6D /* Default.png */,
+				3DF40AEE16A08BE200C05F6D /* Default@2x.png */,
+				3DF40AF016A08BE200C05F6D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF40AFE16A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40B0416A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.h */,
+				3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */,
+				3DF40AFF16A08BE200C05F6D /* Supporting Files */,
+			);
+			path = "Bottle Rocket iOS Developer TestTests";
+			sourceTree = "<group>";
+		};
+		3DF40AFF16A08BE200C05F6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF40B0016A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests-Info.plist */,
+				3DF40B0116A08BE200C05F6D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF40AD516A08BE200C05F6D /* Bottle Rocket iOS Developer Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF40B0916A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer Test" */;
+			buildPhases = (
+				3DF40AD216A08BE200C05F6D /* Sources */,
+				3DF40AD316A08BE200C05F6D /* Frameworks */,
+				3DF40AD416A08BE200C05F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bottle Rocket iOS Developer Test";
+			productName = "Bottle Rocket iOS Developer Test";
+			productReference = 3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DF40AF616A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF40B0C16A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer TestTests" */;
+			buildPhases = (
+				3DF40AF216A08BE200C05F6D /* Sources */,
+				3DF40AF316A08BE200C05F6D /* Frameworks */,
+				3DF40AF416A08BE200C05F6D /* Resources */,
+				3DF40AF516A08BE200C05F6D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF40AFD16A08BE200C05F6D /* PBXTargetDependency */,
+			);
+			name = "Bottle Rocket iOS Developer TestTests";
+			productName = "Bottle Rocket iOS Developer TestTests";
+			productReference = 3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF40ACD16A08BE200C05F6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Joy Tao";
+			};
+			buildConfigurationList = 3DF40AD016A08BE200C05F6D /* Build configuration list for PBXProject "Bottle Rocket iOS Developer Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DF40ACB16A08BE200C05F6D;
+			productRefGroup = 3DF40AD716A08BE200C05F6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF40AD516A08BE200C05F6D /* Bottle Rocket iOS Developer Test */,
+				3DF40AF616A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF40AD416A08BE200C05F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40AE516A08BE200C05F6D /* InfoPlist.strings in Resources */,
+				3DF40AED16A08BE200C05F6D /* Default.png in Resources */,
+				3DF40AEF16A08BE200C05F6D /* Default@2x.png in Resources */,
+				3DF40AF116A08BE200C05F6D /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF40AF416A08BE200C05F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40B0316A08BE200C05F6D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DF40AF516A08BE200C05F6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF40AD216A08BE200C05F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40AE716A08BE200C05F6D /* main.m in Sources */,
+				3DF40AEB16A08BE200C05F6D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF40AF216A08BE200C05F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF40B0616A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF40AFD16A08BE200C05F6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF40AD516A08BE200C05F6D /* Bottle Rocket iOS Developer Test */;
+			targetProxy = 3DF40AFC16A08BE200C05F6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DF40AE316A08BE200C05F6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF40AE416A08BE200C05F6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DF40B0116A08BE200C05F6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF40B0216A08BE200C05F6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF40B0716A08BE200C05F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DF40B0816A08BE200C05F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF40B0A16A08BE200C05F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
+				INFOPLIST_FILE = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DF40B0B16A08BE200C05F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
+				INFOPLIST_FILE = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DF40B0D16A08BE200C05F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bottle Rocket iOS Developer Test.app/Bottle Rocket iOS Developer Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
+				INFOPLIST_FILE = "Bottle Rocket iOS Developer TestTests/Bottle Rocket iOS Developer TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3DF40B0E16A08BE200C05F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bottle Rocket iOS Developer Test.app/Bottle Rocket iOS Developer Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
+				INFOPLIST_FILE = "Bottle Rocket iOS Developer TestTests/Bottle Rocket iOS Developer TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF40AD016A08BE200C05F6D /* Build configuration list for PBXProject "Bottle Rocket iOS Developer Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF40B0716A08BE200C05F6D /* Debug */,
+				3DF40B0816A08BE200C05F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF40B0916A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF40B0A16A08BE200C05F6D /* Debug */,
+				3DF40B0B16A08BE200C05F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DF40B0C16A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF40B0D16A08BE200C05F6D /* Debug */,
+				3DF40B0E16A08BE200C05F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF40ACD16A08BE200C05F6D /* Project object */;
+}
