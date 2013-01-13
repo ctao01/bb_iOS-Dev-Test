@@ -12,7 +12,6 @@
 #import "SDImageCache.h"
 
 #import "CustomTableViewCell.h"
-
 @interface Tab1TableViewController ()
 @property (nonatomic ,retain) NSArray * collections;
 
@@ -51,6 +50,8 @@
              dispatch_async(dispatch_get_main_queue(), ^{
                  self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
                  [self.tableView reloadData];
+                 NSLog(@"%@",self.collections);
+
              });
          }
          else if ([data length] == 0 && error == nil)
@@ -107,34 +108,36 @@
     static NSString *CellIdentifier = @"Cell";
     CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
+    {
         cell = (CustomTableViewCell*)[[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     cell.phoneLabel.text = [[self.collections objectAtIndex:indexPath.row] objectForKey:@"phone"];
     cell.addressLabel.text = [[self.collections objectAtIndex:indexPath.row] objectForKey:@"address"];
     NSURL * url = [NSURL URLWithString:[[self.collections objectAtIndex:indexPath.row] objectForKey:@"storeLogoURL"]];
+    NSLog(@"%@",url);
+
     if (self.tableView.dragging == NO && self.tableView.decelerating == NO)
-    {
-        [cell.logoImageView setImageWithURL:url
-                              placeholderImage:nil];
-        UIImage * resizedImage = [self imageWithImage:cell.logoImageView.image scaledToSize:CGSizeMake(80.0f, 48.0f)];
-        [cell.logoImageView setImage:resizedImage];
-        [cell.logoImageView setNeedsDisplay];
-    }
-    else {
-        [cell.logoImageView setImageWithURL:url
-                              placeholderImage:nil
-                                       options:SDWebImageLazyLoad];
-        UIImage * resizedImage = [self imageWithImage:nil scaledToSize:CGSizeMake(80.0f, 48.0f)];
-        [cell.logoImageView setImage:resizedImage];
-        [cell.logoImageView setNeedsDisplay];
-    }
+        [cell.logoImageView setImageWithURL:url  placeholderImage:nil];
+    
+    else
+        [cell.logoImageView setImageWithURL:url placeholderImage:nil options:SDWebImageLazyLoad];
+    
+
     
     return cell;
 }
 
-- (float) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 90.0f;
+//    NSString * cellText =[[self.collections objectAtIndex:indexPath.row] objectForKey:@"phone"];
+//    UIFont *cellFont = [UIFont fontWithName:@"ArialMT" size:16.0];
+//    CGSize constraintSize = CGSizeMake(100, MAXFLOAT);
+//    CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+    NSURL * url = [NSURL URLWithString:[[self.collections objectAtIndex:indexPath.row] objectForKey:@"storeLogoURL"]];
+    UIImage * logoImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+    return logoImage.size.height + 40.0f;
 }
+
 
 #pragma mark - Table view delegate
 
@@ -156,11 +159,6 @@
         {
             CustomTableViewCell *cell = (CustomTableViewCell*) [[self tableView] cellForRowAtIndexPath:indexPath];
             [cell.logoImageView startDownloadWithOptions:SDWebImageLazyLoad];
-            
-            UIImage * resizedImage = [self imageWithImage:cell.logoImageView.image scaledToSize:CGSizeMake(80.0f, 48.0f)];
-            [cell.logoImageView setImage:resizedImage];
-            [cell.logoImageView setNeedsDisplay];
-            
         }
     }
 }
