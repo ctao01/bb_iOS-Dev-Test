@@ -96,6 +96,8 @@
 
 - (void) dealloc
 {
+    [self.toolBar release];
+    [self.webView release];
     [super dealloc];
 }
 
