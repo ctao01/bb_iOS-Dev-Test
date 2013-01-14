@@ -30,6 +30,7 @@
         self.logoImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, 200.0f, 60.0f)];
         self.logoImageView.contentMode = UIViewContentModeScaleAspectFill | UIViewContentModeScaleAspectFit;
         self.logoImageView.frame = CGRectOffset(self.logoImageView.frame, 2.0f, 2.0f);
+        self.logoImageView.backgroundColor = [UIColor clearColor];
         
         self.phoneLabel = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 0.0f, frame.size.width/2, 40.0f)];
         self.phoneLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D37A61816A31A7600E6EB49 /* UIImage+Additons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D37A61716A31A7600E6EB49 /* UIImage+Additons.m */; };
+		3D37A61B16A32EA800E6EB49 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D37A61A16A32EA800E6EB49 /* DetailViewController.m */; };
+		3D37A62116A3531700E6EB49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D37A62016A3531700E6EB49 /* MapKit.framework */; };
+		3D37A62316A3541300E6EB49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D37A62216A3541300E6EB49 /* QuartzCore.framework */; };
+		3D37A62616A3554F00E6EB49 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D37A62516A3554F00E6EB49 /* Annotation.m */; };
 		3DF40ADB16A08BE200C05F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADA16A08BE200C05F6D /* UIKit.framework */; };
 		3DF40ADD16A08BE200C05F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADC16A08BE200C05F6D /* Foundation.framework */; };
 		3DF40ADF16A08BE200C05F6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADE16A08BE200C05F6D /* CoreGraphics.framework */; };
@@ -16,11 +21,6 @@
 		3DF40AED16A08BE200C05F6D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AEC16A08BE200C05F6D /* Default.png */; };
 		3DF40AEF16A08BE200C05F6D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AEE16A08BE200C05F6D /* Default@2x.png */; };
 		3DF40AF116A08BE200C05F6D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40AF016A08BE200C05F6D /* Default-568h@2x.png */; };
-		3DF40AF916A08BE200C05F6D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40AF816A08BE200C05F6D /* SenTestingKit.framework */; };
-		3DF40AFA16A08BE200C05F6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADA16A08BE200C05F6D /* UIKit.framework */; };
-		3DF40AFB16A08BE200C05F6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF40ADC16A08BE200C05F6D /* Foundation.framework */; };
-		3DF40B0316A08BE200C05F6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF40B0116A08BE200C05F6D /* InfoPlist.strings */; };
-		3DF40B0616A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */; };
 		3DF40B1F16A08FC000C05F6D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B1E16A08FC000C05F6D /* RootViewController.m */; };
 		3DF40B2516A0910100C05F6D /* Tab1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B2416A0910100C05F6D /* Tab1TableViewController.m */; };
 		3DF40B2816A0911300C05F6D /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B2716A0911300C05F6D /* Tab2ViewController.m */; };
@@ -34,17 +34,15 @@
 		3DF40B5616A0DAA400C05F6D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B4F16A0DAA400C05F6D /* UIImageView+WebCache.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3DF40AFC16A08BE200C05F6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3DF40ACD16A08BE200C05F6D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3DF40AD516A08BE200C05F6D;
-			remoteInfo = "Bottle Rocket iOS Developer Test";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3D37A61616A31A7600E6EB49 /* UIImage+Additons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Additons.h"; path = "Category/UIImage+Additons.h"; sourceTree = "<group>"; };
+		3D37A61716A31A7600E6EB49 /* UIImage+Additons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Additons.m"; path = "Category/UIImage+Additons.m"; sourceTree = "<group>"; };
+		3D37A61916A32EA800E6EB49 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Classes/DetailViewController.h; sourceTree = "<group>"; };
+		3D37A61A16A32EA800E6EB49 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Classes/DetailViewController.m; sourceTree = "<group>"; };
+		3D37A62016A3531700E6EB49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D37A62216A3541300E6EB49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D37A62416A3554F00E6EB49 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = Classes/Annotation.h; sourceTree = "<group>"; };
+		3D37A62516A3554F00E6EB49 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = Classes/Annotation.m; sourceTree = "<group>"; };
 		3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bottle Rocket iOS Developer Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF40ADA16A08BE200C05F6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DF40ADC16A08BE200C05F6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,12 +56,7 @@
 		3DF40AEC16A08BE200C05F6D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3DF40AEE16A08BE200C05F6D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3DF40AF016A08BE200C05F6D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bottle Rocket iOS Developer TestTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF40AF816A08BE200C05F6D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3DF40B0016A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bottle Rocket iOS Developer TestTests-Info.plist"; sourceTree = "<group>"; };
-		3DF40B0216A08BE200C05F6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3DF40B0416A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle_Rocket_iOS_Developer_TestTests.h; sourceTree = "<group>"; };
-		3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle_Rocket_iOS_Developer_TestTests.m; sourceTree = "<group>"; };
 		3DF40B1D16A08FC000C05F6D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = "<group>"; };
 		3DF40B1E16A08FC000C05F6D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = "<group>"; };
 		3DF40B2316A0910100C05F6D /* Tab1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tab1TableViewController.h; path = Classes/Tab1TableViewController.h; sourceTree = "<group>"; };
@@ -97,30 +90,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D37A62316A3541300E6EB49 /* QuartzCore.framework in Frameworks */,
+				3D37A62116A3531700E6EB49 /* MapKit.framework in Frameworks */,
 				3DF40ADB16A08BE200C05F6D /* UIKit.framework in Frameworks */,
 				3DF40ADD16A08BE200C05F6D /* Foundation.framework in Frameworks */,
 				3DF40ADF16A08BE200C05F6D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DF40AF316A08BE200C05F6D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DF40AF916A08BE200C05F6D /* SenTestingKit.framework in Frameworks */,
-				3DF40AFA16A08BE200C05F6D /* UIKit.framework in Frameworks */,
-				3DF40AFB16A08BE200C05F6D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D37A61416A31A4A00E6EB49 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D37A61616A31A7600E6EB49 /* UIImage+Additons.h */,
+				3D37A61716A31A7600E6EB49 /* UIImage+Additons.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		3DF40ACB16A08BE200C05F6D = {
 			isa = PBXGroup;
 			children = (
+				3D37A62216A3541300E6EB49 /* QuartzCore.framework */,
 				3DF40AE016A08BE200C05F6D /* Bottle Rocket iOS Developer Test */,
-				3DF40AFE16A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */,
 				3DF40AD916A08BE200C05F6D /* Frameworks */,
 				3DF40AD716A08BE200C05F6D /* Products */,
 			);
@@ -130,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */,
-				3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +131,7 @@
 		3DF40AD916A08BE200C05F6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D37A62016A3531700E6EB49 /* MapKit.framework */,
 				3DF40ADA16A08BE200C05F6D /* UIKit.framework */,
 				3DF40ADC16A08BE200C05F6D /* Foundation.framework */,
 				3DF40ADE16A08BE200C05F6D /* CoreGraphics.framework */,
@@ -149,6 +143,7 @@
 		3DF40AE016A08BE200C05F6D /* Bottle Rocket iOS Developer Test */ = {
 			isa = PBXGroup;
 			children = (
+				3D37A61416A31A4A00E6EB49 /* Categories */,
 				3DF40B1C16A08F8200C05F6D /* Classes */,
 				3DF40B1316A08C9800C05F6D /* Vendors */,
 				3DF40AE916A08BE200C05F6D /* AppDelegate.h */,
@@ -172,25 +167,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3DF40AFE16A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */ = {
-			isa = PBXGroup;
-			children = (
-				3DF40B0416A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.h */,
-				3DF40B0516A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m */,
-				3DF40AFF16A08BE200C05F6D /* Supporting Files */,
-			);
-			path = "Bottle Rocket iOS Developer TestTests";
-			sourceTree = "<group>";
-		};
-		3DF40AFF16A08BE200C05F6D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3DF40B0016A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests-Info.plist */,
-				3DF40B0116A08BE200C05F6D /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3DF40B1316A08C9800C05F6D /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +185,10 @@
 				3DF40B2416A0910100C05F6D /* Tab1TableViewController.m */,
 				3DF40B2616A0911300C05F6D /* Tab2ViewController.h */,
 				3DF40B2716A0911300C05F6D /* Tab2ViewController.m */,
+				3D37A61916A32EA800E6EB49 /* DetailViewController.h */,
+				3D37A61A16A32EA800E6EB49 /* DetailViewController.m */,
+				3D37A62416A3554F00E6EB49 /* Annotation.h */,
+				3D37A62516A3554F00E6EB49 /* Annotation.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -267,25 +247,6 @@
 			productReference = 3DF40AD616A08BE200C05F6D /* Bottle Rocket iOS Developer Test.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3DF40AF616A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3DF40B0C16A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer TestTests" */;
-			buildPhases = (
-				3DF40AF216A08BE200C05F6D /* Sources */,
-				3DF40AF316A08BE200C05F6D /* Frameworks */,
-				3DF40AF416A08BE200C05F6D /* Resources */,
-				3DF40AF516A08BE200C05F6D /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3DF40AFD16A08BE200C05F6D /* PBXTargetDependency */,
-			);
-			name = "Bottle Rocket iOS Developer TestTests";
-			productName = "Bottle Rocket iOS Developer TestTests";
-			productReference = 3DF40AF716A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -308,7 +269,6 @@
 			projectRoot = "";
 			targets = (
 				3DF40AD516A08BE200C05F6D /* Bottle Rocket iOS Developer Test */,
-				3DF40AF616A08BE200C05F6D /* Bottle Rocket iOS Developer TestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,31 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DF40AF416A08BE200C05F6D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DF40B0316A08BE200C05F6D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3DF40AF516A08BE200C05F6D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DF40AD216A08BE200C05F6D /* Sources */ = {
@@ -369,40 +305,19 @@
 				3DF40B5416A0DAA400C05F6D /* SDWebImagePrefetcher.m in Sources */,
 				3DF40B5516A0DAA400C05F6D /* UIButton+WebCache.m in Sources */,
 				3DF40B5616A0DAA400C05F6D /* UIImageView+WebCache.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3DF40AF216A08BE200C05F6D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DF40B0616A08BE200C05F6D /* Bottle_Rocket_iOS_Developer_TestTests.m in Sources */,
+				3D37A61816A31A7600E6EB49 /* UIImage+Additons.m in Sources */,
+				3D37A61B16A32EA800E6EB49 /* DetailViewController.m in Sources */,
+				3D37A62616A3554F00E6EB49 /* Annotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3DF40AFD16A08BE200C05F6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3DF40AD516A08BE200C05F6D /* Bottle Rocket iOS Developer Test */;
-			targetProxy = 3DF40AFC16A08BE200C05F6D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3DF40AE316A08BE200C05F6D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3DF40AE416A08BE200C05F6D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3DF40B0116A08BE200C05F6D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DF40B0216A08BE200C05F6D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -468,6 +383,7 @@
 				INFOPLIST_FILE = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -480,41 +396,8 @@
 				INFOPLIST_FILE = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		3DF40B0D16A08BE200C05F6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bottle Rocket iOS Developer Test.app/Bottle Rocket iOS Developer Test";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
-				INFOPLIST_FILE = "Bottle Rocket iOS Developer TestTests/Bottle Rocket iOS Developer TestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3DF40B0E16A08BE200C05F6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bottle Rocket iOS Developer Test.app/Bottle Rocket iOS Developer Test";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Bottle Rocket iOS Developer Test/Bottle Rocket iOS Developer Test-Prefix.pch";
-				INFOPLIST_FILE = "Bottle Rocket iOS Developer TestTests/Bottle Rocket iOS Developer TestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -537,14 +420,7 @@
 				3DF40B0B16A08BE200C05F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		3DF40B0C16A08BE200C05F6D /* Build configuration list for PBXNativeTarget "Bottle Rocket iOS Developer TestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3DF40B0D16A08BE200C05F6D /* Debug */,
-				3DF40B0E16A08BE200C05F6D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

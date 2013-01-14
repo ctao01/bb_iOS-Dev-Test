@@ -12,6 +12,8 @@
 #import "SDImageCache.h"
 
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
+
 @interface Tab1TableViewController ()
 @property (nonatomic ,retain) NSArray * collections;
 
@@ -38,8 +40,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.navigationItem.title = @"Store Data";
+    
     NSURL * url = [NSURL URLWithString:@"http://strong-earth-32.heroku.com/stores.aspx"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    UIActivityIndicatorView * activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicator.center = CGPointMake(self.view.center.x, self.view.center.y - 44.0f);
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response,NSData *data,NSError *error)
      {
@@ -50,7 +58,8 @@
              dispatch_async(dispatch_get_main_queue(), ^{
                  self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
                  [self.tableView reloadData];
-                 NSLog(@"%@",self.collections);
+                 [activityIndicator stopAnimating];
+
 
              });
          }
@@ -63,6 +72,7 @@
          }
          
      }];
+    [activityIndicator release];
 
 }
 
@@ -122,8 +132,6 @@
     else
         [cell.logoImageView setImageWithURL:url placeholderImage:nil options:SDWebImageLazyLoad];
     
-
-    
     return cell;
 }
 
@@ -143,7 +151,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    DetailViewController * vc = [[DetailViewController alloc]initWithStyle:UITableViewStyleGrouped];
+    vc.title = [[self.collections objectAtIndex:indexPath.row] objectForKey:@"name"];
+    [vc setSelectedObject:[self.collections objectAtIndex:indexPath.row]];
     
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 #pragma mark -
