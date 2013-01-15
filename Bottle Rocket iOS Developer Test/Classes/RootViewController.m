@@ -43,7 +43,7 @@
     [vc2 release];
     
     self.viewControllers = [NSArray arrayWithObjects:nc1, nc2, nil];
-    self.selectedIndex = 0;
+    self.selectedIndex = 1;
 
     [nc1 release];
     [nc2 release];

@@ -36,6 +36,7 @@
 		3DF40B5416A0DAA400C05F6D /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B4B16A0DAA400C05F6D /* SDWebImagePrefetcher.m */; };
 		3DF40B5516A0DAA400C05F6D /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B4D16A0DAA400C05F6D /* UIButton+WebCache.m */; };
 		3DF40B5616A0DAA400C05F6D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF40B4F16A0DAA400C05F6D /* UIImageView+WebCache.m */; };
+		7E8EAFA116A5C02B00F0B4B8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8EAFA016A5C02B00F0B4B8 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,8 @@
 		3DF40B4D16A0DAA400C05F6D /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		3DF40B4E16A0DAA400C05F6D /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		3DF40B4F16A0DAA400C05F6D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		7E8EAF9F16A5C02B00F0B4B8 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		7E8EAFA016A5C02B00F0B4B8 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,7 @@
 		3DF40B1316A08C9800C05F6D /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				7E8EAF9E16A5C02B00F0B4B8 /* JSON */,
 				3DF40B3D16A0DAA400C05F6D /* SDWebImage */,
 			);
 			path = Vendors;
@@ -245,6 +249,15 @@
 				3DF40B4F16A0DAA400C05F6D /* UIImageView+WebCache.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		7E8EAF9E16A5C02B00F0B4B8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7E8EAF9F16A5C02B00F0B4B8 /* JSONKit.h */,
+				7E8EAFA016A5C02B00F0B4B8 /* JSONKit.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +345,7 @@
 				3D37A61816A31A7600E6EB49 /* UIImage+Additons.m in Sources */,
 				3D37A61B16A32EA800E6EB49 /* DetailViewController.m in Sources */,
 				3D37A62616A3554F00E6EB49 /* Annotation.m in Sources */,
+				7E8EAFA116A5C02B00F0B4B8 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

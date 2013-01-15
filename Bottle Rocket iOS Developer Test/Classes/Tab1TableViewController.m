@@ -10,17 +10,21 @@
 
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
+#import "JSONKit.h"
 
 #import "CustomTableViewCell.h"
 #import "DetailViewController.h"
 
 @interface Tab1TableViewController ()
 @property (nonatomic ,retain) NSArray * collections;
+@property (nonatomic ,retain) NSMutableData * data;
 
 @end
 
 @implementation Tab1TableViewController
 @synthesize collections = _collections;
+@synthesize data = _data;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -44,35 +48,76 @@
     
     NSURL * url = [NSURL URLWithString:@"http://strong-earth-32.heroku.com/stores.aspx"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    UIActivityIndicatorView * activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    activityIndicator.center = CGPointMake(self.view.center.x, self.view.center.y - 44.0f);
-    [self.view addSubview:activityIndicator];
-    [activityIndicator startAnimating];
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response,NSData *data,NSError *error)
-     {
-         if ([data length] >0 && error == nil)
-         {
-             id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-             if (error == nil)
-             dispatch_async(dispatch_get_main_queue(), ^{
-                 self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
-                 [self.tableView reloadData];
-                 [activityIndicator stopAnimating];
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
+//    dispatch_async(queue, ^{
+//        NSURLResponse *response = nil;
+//        NSError *error = nil;
+//        
+//        NSData *receivedData = [NSURLConnection sendSynchronousRequest:request
+//                                                     returningResponse:&response
+//                                                                 error:&error];
+//        
+//        //json parse
+//        NSString * responseString = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+//        id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+//        //Accessing JSON content
+//        NSLog(@"type :  %@", [jsonObject objectForKey:@"Type"] );
 
+//        [self processJSONDataWithReceivedData:receivedData andError:error];
+        
+//        if ([receivedData length] >0 && error == nil)
+//        {
+//            id result = [NSJSONSerialization JSONObjectWithData:receivedData options:NSJSONReadingMutableContainers error:&error];
+//            if (error == nil)
+////                dispatch_async(dispatch_get_main_queue(), ^{
+//                    self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
+//                    [self.tableView reloadData];
+////                    [activityIndicator stopAnimating];
+//                    
+//                    
+////                });
+//        }
+//        else if ([receivedData length] == 0 && error == nil)
+//        {
+//            NSLog(@"Nothing was downloaded.");
+//        }
+//        else if (error != nil){
+//            NSLog(@"Error = %@", error);
+//        }
 
-             });
-         }
-         else if ([data length] == 0 && error == nil)
-         {
-             NSLog(@"Nothing was downloaded.");
-         }
-         else if (error != nil){
-             NSLog(@"Error = %@", error);
-         }
-         
-     }];
-    [activityIndicator release];
+//    });
+    
+//    UIActivityIndicatorView * activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//    activityIndicator.center = CGPointMake(self.view.center.x, self.view.center.y - 44.0f);
+//    [self.view addSubview:activityIndicator];
+//    [activityIndicator startAnimating];
+    
+//    [BCURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response,NSData *data,NSError *error)
+//     {
+//         if ([data length] >0 && error == nil)
+//         {
+//             id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+//             if (error == nil)
+//             dispatch_async(dispatch_get_main_queue(), ^{
+//                 self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
+//                 [self.tableView reloadData];
+//                 [activityIndicator stopAnimating];
+//
+//
+//             });
+//         }
+//         else if ([data length] == 0 && error == nil)
+//         {
+//             NSLog(@"Nothing was downloaded.");
+//         }
+//         else if (error != nil){
+//             NSLog(@"Error = %@", error);
+//         }
+//
+//     }];
+//    [activityIndicator release];
 
 }
 
@@ -88,7 +133,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - 
+
+-(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
+{
+    _data = [[NSMutableData alloc] init]; // _data being an ivar
+    NSLog(@"%@",_data);
+}
+-(void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
+{
+    [_data appendData:data];
+    NSLog(@"%@",data);
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection*)connection
+{
+    id result = [self.data objectFromJSONData];
+
+    self.collections = [[NSMutableArray alloc]initWithArray:[result objectForKey:@"stores"]];
+    NSLog(@"%@",self.collections);
+
+    [self.tableView reloadData];
+    
+    [connection release];
+
+}
+
+#pragma mark -
+
+//- (void) processJSONDataWithReceivedData:(NSData*)data andError:(NSError*)error
+//{
+//    NSLog(@"processJSONDataWithReceivedData");
+//    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+//    NSLog(@"%@",result);
+//}
 
 - (UIImage *) imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
     

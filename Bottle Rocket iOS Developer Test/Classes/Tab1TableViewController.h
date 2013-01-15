@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Tab1TableViewController : UITableViewController
+@interface Tab1TableViewController : UITableViewController <NSURLConnectionDataDelegate>
 @end
