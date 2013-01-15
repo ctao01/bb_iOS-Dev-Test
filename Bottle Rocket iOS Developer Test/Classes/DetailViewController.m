@@ -29,7 +29,7 @@
 {
     if (_selectedObject == newObject) return;
     [_selectedObject release];
-    _selectedObject = newObject;
+    _selectedObject = [newObject retain];
     
     UIImage * image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[_selectedObject objectForKey:@"storeLogoURL"]]]];
     UIImage * editedImag = [image imageByScalingProportionallyToSize:self.headerImageView.frame.size];
