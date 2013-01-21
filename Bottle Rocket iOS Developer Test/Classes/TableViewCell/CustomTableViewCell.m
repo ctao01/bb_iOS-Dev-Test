@@ -37,8 +37,9 @@
 
         
         CGRect phoneLabelFrame = self.phoneLabel.frame;
-        self.addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(phoneLabelFrame.origin.x + phoneLabelFrame.size.width, phoneLabelFrame.origin.y, phoneLabelFrame.size.width, phoneLabelFrame.size.height)];
+        self.addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(phoneLabelFrame.origin.x + phoneLabelFrame.size.width, phoneLabelFrame.origin.y, 200.0f, phoneLabelFrame.size.height)];
         self.addressLabel.numberOfLines = 0;
+        self.addressLabel.lineBreakMode = UILineBreakModeWordWrap;
         self.addressLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
         
         [self.contentView addSubview:self.phoneLabel];
